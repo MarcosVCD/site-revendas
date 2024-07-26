@@ -1,3 +1,7 @@
+body{
+    background-color: #243834;
+}
+
 header{
     display: flex;
     background-color: #243834;
@@ -49,4 +53,76 @@ nav{
     background-color: #243834;
     width: 1688px;
     height: 800px;
+}
+
+.container{
+    background-color: #243834;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    margin: 30px;
+}
+
+.titulo-mapa {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    color: #FF8931;
+    margin: 0px;
+    padding: 0px;
+}
+
+.svg-container{
+    position: relative;
+}
+
+.svgbutton {
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background: #0e0c0b;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+
+
+svg {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 50%;
+    height: auto;
+}
+
+path {
+    fill:white;
+    transition: transform 0.3s ease, fill 0.3s ease;
+    transform-origin: center; 
+}
+
+path:hover {
+    transform: scale(1.01);
+    fill: #FF8931;
+    
+}
+
+button{
+    position: absolute;
 }
