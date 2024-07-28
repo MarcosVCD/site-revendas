@@ -47,10 +47,12 @@ nav{
     transform: scale(1.02);
 }
 
+.imagem-da-capa{
+    width: 30%;
+}
 
 .historia{
     display: block;
-    background-color: #243834;
     width: 1688px;
     height: 800px;
 }
@@ -107,7 +109,7 @@ svg {
     display: block;
     margin: 0 auto;
     padding: 0;
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
@@ -123,6 +125,6 @@ path:hover {
     
 }
 
-button{
-    position: absolute;
+path:active{
+    
 }
