@@ -50,7 +50,6 @@ nav{
 .capa{
     background-color: #243834;
     background-image: url("/assets/images/MCA1525T-copiar.jpg");
-    background-image: ;
     padding-top: 80px;
     padding-bottom: 470px;
     background-size: 100%;
@@ -69,12 +68,35 @@ nav{
     opacity: .5;    
 }
 
+.historia{
+    border-top: solid 10px #0e0c0b;
+    padding: 20px;
+}
+
+.historia h1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.historia p{
+    padding: 20px 100px;
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
+    font-size:30px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
 .container{
     background-color: #243834;
     display: flex;
     flex-direction:column;
     text-align: center;
-    margin: 30px;
+    padding: 30px;
+    border-top: solid 10px black;
 }
 
 .svg-container{
