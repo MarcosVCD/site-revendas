@@ -47,14 +47,26 @@ nav{
     transform: scale(1.02);
 }
 
-.imagem-da-capa{
-    width: 30%;
+.capa{
+    background-color: #243834;
+    background-image: url("/assets/images/MCA1525T-copiar.jpg");
+    background-image: ;
+    padding-top: 80px;
+    padding-bottom: 470px;
+    background-size: 100%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    position: relative;
+    isolation: isolate;
 }
 
-.historia{
-    display: block;
-    width: 1688px;
-    height: 800px;
+.capa::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: black;
+    opacity: .5;    
 }
 
 .container{
@@ -63,15 +75,6 @@ nav{
     flex-direction:column;
     text-align: center;
     margin: 30px;
-}
-
-.titulo-mapa {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:30px;
-    font-weight: bold;
-    color: #FF8931;
-    margin: 0px;
-    padding: 0px;
 }
 
 .svg-container{
@@ -90,6 +93,7 @@ nav{
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     z-index: 10;
 }
+
 .dropdown-menu ul {
     list-style-type: none;
     padding: 0;
@@ -102,8 +106,6 @@ nav{
     color: #333;
     display: block;
 }
-
-
 
 svg {
     display: block;
@@ -121,10 +123,6 @@ path {
 
 path:hover {
     transform: scale(1.01);
-    fill: #FF8931;
-    
+    fill: #FF8931;   
 }
 
-path:active{
-    
-}

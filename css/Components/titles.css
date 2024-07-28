@@ -1,0 +1,26 @@
+h1{
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
+    font-size:90px;
+    font-weight: 500;
+    color: #FF8931;
+}
+
+h2{
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
+    font-size:40px;
+    font-weight:500;
+    color: white;
+}
+
+.cover-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-title {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size:30px;
+    margin: 0px;
+    padding: 0px;
+}
