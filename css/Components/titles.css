@@ -1,20 +1,20 @@
-h1{
+.subtitle{
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:90px;
-    font-weight: 500;
-    color: #FF8931;
-}
-
-h2{
-    font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:40px;
+    font-size:3vw;
     font-weight:500;
     color: white;
-}
-
-.cover-title{
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
+.title {
+    display: flex;
+    justify-content: center;
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+    color: #FF8931;
+}
+.cover .title {
+    font-size: 7vw;
+} 

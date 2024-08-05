@@ -6,6 +6,10 @@ header{
     justify-content: space-between;
 }
 
+.logo {
+    width: 10vw;
+}
+
 nav{
     text-align: right;
 }
@@ -16,7 +20,7 @@ nav{
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 500;
     margin-right: 30px;
 }

@@ -1,45 +1,30 @@
-.big-numbers{
+.big-numbers {
     background-color: white;
-}
-
-.big-numbers h1{
     border-top: solid 10px black;
-    display: flex;
-    background-color: white;
     padding-top: 20px;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 60px;
-}
-.box{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
 }
 
-#municipios-atendidos, #portaria, #volume{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px 10px;
-    width: 32%;
-}
-#municipios-atendidos, #portaria {
-    border-right:dotted black;
+.logo {
+    size: 1vw;
 }
 
-h3{
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-rule-style: dashed;
+    justify-items: center;
+}
+
+.topic {
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:45px;
+    font-size:5vw;
     font-weight:bold;
     color: #243834;
 }
 
-.big-numbers p{
+.big-numbers p {
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:30px;
+    font-size:5vw;
     font-weight:500;
     color: #243834;
 }
