@@ -1,19 +1,44 @@
 .big-numbers {
     background-color: white;
     border-top: solid 0.7032348804500703vw black;
-    padding-top: 1.4064697609001406vw;
+    padding: 1.4064697609001406vw 0px;
 }
 
 .box {
     display: flex;
     justify-content: space-between;
+    padding: 1.042vw 1.563vw;
 }
+
+.box-columns {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.box-columns:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.2%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        to bottom,
+        black,
+        black 0.26vw,
+        transparent 0.26vw,
+        transparent 0.521vw
+    );
+    transform: translateX(-50%);
+    }
 
 .topic {
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
     font-size:3vw;
     font-weight:bold;
     color: #243834;
+    align-self: center;
 }
 
 .big-numbers p {
@@ -21,5 +46,11 @@
     font-size:3vw;
     font-weight:500;
     color: #243834;
+    padding: 0.521vw;
+    transition: transform 0.1s linear;
+}
+
+.big-numbers p:hover {
+    transform: scale(1.05);
 }
 
