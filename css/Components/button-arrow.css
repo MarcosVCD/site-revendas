@@ -1,7 +1,7 @@
 .button-arrow {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 3.5vw;
+    height: 3.5vw;
     background-color: transparent;
     cursor: pointer;
 }
@@ -12,11 +12,11 @@
     content: '';
     display: block;
     box-sizing: border-box;
-    width: 15px;
-    height: 15px;
-    border: 20px solid transparent;
-    border-left: 28px solid white;
-    transform: translateX(6px);
+    width: 1.05vw;
+    height: 1.05vw;
+    border: 1.4vw solid transparent;
+    border-left: 1.969vw solid white;
+    transform: translateX(0.4vw);
 }
 .button-arrow.-left::before{
     transform: rotate(180deg) translateX(15px);

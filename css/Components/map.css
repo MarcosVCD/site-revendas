@@ -3,8 +3,8 @@
     display: flex;
     flex-direction:column;
     text-align: center;
-    padding: 30px;
-    border-top: solid 10px black;
+    padding: 2.109704641350211vw;
+    border-top: solid 0.7vw black;
 }
 
 .svg-container{
@@ -20,7 +20,7 @@
     position: absolute;
     background: #0e0c0b;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 0.2812939521800281vw 0.5625879043600562vw rgba(0,0,0,0.1);
     z-index: 10;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .dropdown-menu ul li {
-    padding: 8px 16px;
+    padding: 0.5625879043600562vw 1.1251758087201125vw;
     text-decoration: none;
     color: #333;
     display: block;

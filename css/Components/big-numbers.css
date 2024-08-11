@@ -1,30 +1,24 @@
 .big-numbers {
     background-color: white;
-    border-top: solid 10px black;
-    padding-top: 20px;
-}
-
-.logo {
-    size: 1vw;
+    border-top: solid 0.7032348804500703vw black;
+    padding-top: 1.4064697609001406vw;
 }
 
 .box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-rule-style: dashed;
-    justify-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .topic {
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:5vw;
+    font-size:3vw;
     font-weight:bold;
     color: #243834;
 }
 
 .big-numbers p {
     font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:5vw;
+    font-size:3vw;
     font-weight:500;
     color: #243834;
 }

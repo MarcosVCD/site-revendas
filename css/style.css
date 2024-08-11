@@ -6,8 +6,8 @@ body{
 .cover{
     background-color: #243834;
     background-image: url("/assets/images/MCA1525T-copiar.jpg");
-    padding-top: 80px;
-    padding-bottom: 470px;
+    padding-top: 6vw;
+    padding-bottom: 20vw;
     background-size:cover;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -25,14 +25,14 @@ body{
 }
 
 .historia{
-    border-top: solid 10px #0e0c0b;
-    padding: 20px;
+    border-top: solid 0.7vw #0e0c0b;
+    padding: 2vw;
 }
 
 .historia .text{
-    padding: 20px 100px;
+    padding: 2vw 8vw;
     font-family:"Poppins", Arial, Helvetica, sans-serif;
-    font-size: 3vw;
+    font-size: 2.109704641350211vw;
     font-weight: 500;
     color: white;
 }
