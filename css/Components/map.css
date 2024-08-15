@@ -11,6 +11,10 @@
     position: relative;
 }
 
+#svgmap-pb {
+    display: none;
+}
+
 .svgbutton {
     cursor: pointer;
 }
@@ -52,6 +56,11 @@ path {
 }
 
 path:hover {
+    transform: scale(1.01);
+    fill: #6b6b6b;   
+}
+
+.svgbutton:hover {
     transform: scale(1.01);
     fill: #FF8931;   
 }

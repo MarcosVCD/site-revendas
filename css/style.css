@@ -5,7 +5,7 @@ body{
 
 .cover{
     background-color: #243834;
-    background-image: url("/assets/images/MCA1525T-copiar.jpg");
+    background-image: url("/assets/images/capanova.jpg");
     padding-top: 6vw;
     padding-bottom: 20vw;
     background-size:cover;
@@ -21,7 +21,7 @@ body{
     z-index: -1;
     inset: 0;
     background: black;
-    opacity: .5;    
+    opacity: .7;    
 }
 
 .historia{
