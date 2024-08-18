@@ -17,4 +17,5 @@
 }
 .cover .title {
     font-size: 7vw;
+    display: inline;
 } 

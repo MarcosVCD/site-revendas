@@ -13,9 +13,10 @@ header{
 
 nav{
     text-align: right;
+    width: 100%;
 }
 
-.atalhos-de-navegacao, #button {
+.atalhos-de-navegacao, .button {
     display: inline-flex;
     align-items: center;
     color: #FFFFFF;
@@ -34,7 +35,7 @@ nav{
     margin-right: 0.7032348804500703vw;
 }
 
-#button{
+.button{
     display: inline-block;
     background-color: #FF8931;
     padding: 1.4064697609001406vw 1.4064697609001406vw;
@@ -44,20 +45,20 @@ nav{
     transition: transform 0.1s linear;
 }
 
-#button:hover{
+.button:hover{
     transform: scale(1.02);
 }
 
-.venda-ao-consumidor-dropdownmenu ul {
+.canal-de-vendas-dropdownmenu ul {
     display: none;
     list-style: none;
     background-color: #FF8931;
 }
-.venda-ao-consumidor-dropdownmenu ul li {
+.canal-de-vendas-dropdownmenu ul li {
     display: inline-block;
     position: relative;
 }
-.venda-ao-consumidor-dropdownmenu ul li a {
+.canal-de-vendas-dropdownmenu ul li a {
     display: block;
     padding: 20px 25px;
     text-decoration: none;

@@ -1,0 +1,28 @@
+.historia{
+    border-top: solid 0.7vw #0e0c0b;
+    padding: 2vw;
+}
+
+.historia .text{
+    display: block;
+    padding: 0.5vw 0;
+    font-family:"Poppins", Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: white;
+}
+
+.corpo-texto-historia {
+    display: block;
+    width: 50%;
+    text-align: justify;
+    line-height: 1.2;
+    padding: 0;
+}
+
+.secao-texto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 4vw;
+}
