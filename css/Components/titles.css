@@ -1,12 +1,3 @@
-.subtitle{
-    font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:3vw;
-    font-weight:500;
-    color: white;
-    display: flex;
-    justify-content: center;
-}
-
 .title {
     display: flex;
     justify-content: center;
@@ -15,7 +6,3 @@
     font-weight: 700;
     color: #FF8931;
 }
-.cover .title {
-    font-size: 7vw;
-    display: inline;
-} 

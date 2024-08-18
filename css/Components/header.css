@@ -35,20 +35,6 @@ nav{
     margin-right: 0.7032348804500703vw;
 }
 
-.button{
-    display: inline-block;
-    background-color: #FF8931;
-    padding: 1.4064697609001406vw 1.4064697609001406vw;
-    box-shadow: 5px 5px 0 black;
-    border-radius: 5px;
-    margin: 0;
-    transition: transform 0.1s linear;
-}
-
-.button:hover{
-    transform: scale(1.02);
-}
-
 .canal-de-vendas-dropdownmenu ul {
     display: none;
     list-style: none;
