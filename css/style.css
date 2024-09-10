@@ -34,9 +34,14 @@ body::after{
     background-color: #243834;
     padding: 1.4vw 1.4vw;
     box-shadow: 5px 5px 0 #314c47;;
-    border-radius: 10% 100% 10% 10% / 10% 10% 10% 10%;
+    border-radius: 0% 100% 0% 0% / 0% 0% 0% 0%;
     color: white;
+    animation-name: sliderigth;
+    animation-duration: 2s;
 } 
+@keyframes sliderigth{
+    from{transform: translateX(-100%);}
+}
 
 .subtitle{
     display: flex;
@@ -51,21 +56,53 @@ body::after{
     font-size:2vw;
     font-weight:500;
     color: white;
-    z-index: 1;
+    z-index: -1;
+    animation-name: slideleft;
+    animation-duration: 2s;
+}
+@keyframes slideleft{
+    from{transform: translateX(100%);}
+}
+
+.title-navegation {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation-name: show-slidetext;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+@keyframes show-slidetext{
+    from{transform: translateX(-20%);}
+    to{opacity: 1;}
 }
 
 .button-navegation{
     display: flex;
-    justify-content: center ;
-    padding: 60px 0;
+    justify-content: space-evenly ;
+    padding: 20px 0px 50px 0px;
+    animation-name: showbutton;
+    opacity: 0;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes showbutton{
+    to{opacity: 1;}
 }
 
 .button{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height:50px ;
     background-color: #FF8931;
-    padding: 1.4vw 1.4vw;
+    /* padding: 1.4vw 1.4vw; */
     box-shadow: 5px 5px 0 black;
-    border-radius: 100%;
+    border-radius: 20px;
     margin: 0;
     transition: transform 0.1s linear;
 }

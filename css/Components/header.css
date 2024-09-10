@@ -1,8 +1,8 @@
 header{
     display: flex;
     background-color: #243834;
-    border-bottom : 0.7032348804500703vw solid black;
-    padding: 0.7032348804500703vw 1.4064697609001406vw;
+    border-bottom : 0.6vw solid black;
+    padding: 0.3vw 1.4064697609001406vw;
     justify-content: space-between;
     align-items: center;
 }
