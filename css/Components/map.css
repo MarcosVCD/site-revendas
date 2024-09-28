@@ -15,6 +15,7 @@
 
 .svgbutton {
     cursor: pointer;
+    fill: #FF8931;
 }
 
 .dropdown-menu{

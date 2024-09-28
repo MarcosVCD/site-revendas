@@ -1,3 +1,38 @@
+.venda-ao-consumidor{
+    width: 100%;
+    height: 600px;
+    background-color: aliceblue;
+}
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size:6vw;
+    font-weight:500;
+    color: black;
+    z-index: -1;
+    animation-name: slideleft;
+    animation-duration: 2s;
+}
+@keyframes slideleft{
+    from{transform: translateX(100%);}
+}
+
+
+.venda-industrial{
+    width: 100%;
+    height: 600px;
+    background-color: blue;
+}
+
+.atendimento-da-sub-rede{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
 .big-numbers {
     background-color: white;
     border-top: solid 0.7032348804500703vw black;

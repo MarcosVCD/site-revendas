@@ -32,3 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll ('header nav a').forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add('active-page');
+    }
+})
