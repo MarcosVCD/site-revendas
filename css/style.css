@@ -1,14 +1,15 @@
 body{
     background-color: #243834;
-    font-family:"Poppins", Arial, Helvetica, sans-serif;
-    background-image: url("../assets/images/mca1525T-copiar.jpg");
-    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/images/capanova.jpg);
+    background-size: 100%;
     background-position-y: center;
     background-repeat: no-repeat;
     position: relative;
     isolation: isolate;
     min-height:650px;
     height: fit-content;
+    height: 100svh;
 }
 
 body::after{
@@ -17,11 +18,11 @@ body::after{
     z-index: -2 ;
     inset: 0;
     background: black;
-    opacity: .6;    
+    opacity: .2;    
 }
 
 .cover{
-    padding: 30px;
+    padding: 10svh 0 0 0 ;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -29,12 +30,11 @@ body::after{
 }
 
 .cover .title {
-    font-size: 7vw;
+    font-size: 64px;
+    font-style: normal;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 700;
     display: inline;
-    background-color: #243834;
-    padding: 1.4vw 1.4vw;
-    box-shadow: 5px 5px 0 #314c47;;
-    border-radius: 0% 100% 0% 0% / 0% 0% 0% 0%;
     color: white;
     animation-name: sliderigth;
     animation-duration: 2s;
@@ -47,16 +47,12 @@ body::after{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #243834;
-    padding: 1.4vw 1.4vw;
-    box-shadow: 5px 5px 0 #314c47;;
-    border-radius: 15px;
-    margin: 0;
-    font-family:  "Poppins", Arial, Helvetica, sans-serif;
-    font-size:2vw;
-    font-weight:500;
+    padding: 3svh 0 0 0 ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 36px;
+    font-weight:700;
     color: white;
-    z-index: -1;
     animation-name: slideleft;
     animation-duration: 2s;
 }
@@ -64,45 +60,33 @@ body::after{
     from{transform: translateX(100%);}
 }
 
-.title-navegation {
-    padding: 30px;
+.navegation {
     display: flex;
-    justify-content: center;
-    opacity: 0;
-    animation-name: show-slidetext;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-}
-@keyframes show-slidetext{
-    from{transform: translateX(-20%);}
-    to{opacity: 1;}
-}
-
-.button-navegation{
-    display: flex;
-    justify-content: space-evenly ;
-    padding: 20px 0px 50px 0px;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os cards se ajustem em diferentes linhas, caso necessário */
+    padding: 5svh 0px 48px 0px;
     animation-name: showbutton;
     opacity: 0;
     animation-duration: 5s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
-}
-@keyframes showbutton{
-    to{opacity: 1;}
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box; /* Garante que o padding e borda sejam incluídos na largura */
 }
 
-.button{
+@keyframes showbutton {
+    to { opacity: 1; }
+}
+
+.button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height:50px ;
     background-color: #FF8931;
-    /* padding: 1.4vw 1.4vw; */
-    box-shadow: 5px 5px 0 black;
-    border-radius: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
     margin: 0;
     transition: transform 0.1s linear;
     font-family: Arial, Helvetica, sans-serif;
@@ -112,6 +96,45 @@ body::after{
     color: #FFFFFF;
 }
 
-.button:hover{
+.button:hover {
     transform: scale(1.02);
+}
+
+.icon-card {
+    height: 48px;
+    width: auto;
+}
+
+.card-navegation {
+    background-color: #FFFFFF;
+    display: flex;
+    width: 290px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 16px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    align-self: stretch;
+    color: #FF8931;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-text {
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

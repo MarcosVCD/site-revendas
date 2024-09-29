@@ -1,16 +1,20 @@
 header{
     display: flex;
     background-color: #243834;
-    padding: 8px 160px;
+    padding: 2px 160px;
     justify-content: space-between;
     align-items: center;
+    height: 64px;
 }
 
-nav{
-    display: flex;
-    text-align: right;
-    justify-content: space-between;
-    width: 525px;
+.logo{
+    width: 137px;
+}
+
+.nav-header{
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .atalhos-de-navegacao {
@@ -21,7 +25,15 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 400;
+    position: relative;
 }
-.active-page {
-
+.active-page::after {
+    content: "";
+    position: absolute;
+    bottom: -26px; /* Ajuste para colar a linha na parte inferior */
+    left: 0;
+    right: 0;
+    height: 2px; /* Altura da linha */
+    background-color: #FF8931; /* Cor laranja da linha */
+    width: 100%; /* Largura igual à da palavra */
 }
