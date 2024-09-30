@@ -1,29 +1,142 @@
 .historia{
-    padding: 2vw;
+    padding: 40px 220px 0px;
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animação suave */
+    transform: translateX(0); /* Começa no primeiro card */
+    position: relative;
+    margin:20px;
 }
 
-.text{
-    display: block;
-    padding: 0.5vw 0;
-    font-family:"Poppins", Arial, Helvetica, sans-serif;
+.texto-historia {
+    line-height: normal;
+    padding: 24px 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 1.5vw;
     font-weight: 500;
     color: white;
 }
 
-.corpo-texto-historia {
-    display: block;
-    width: 50%;
-    text-align: justify;
-    line-height: 1.2;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: #243834;;
+.ano{
+    display: flex;
+    color: #FF8931;
+    text-align: center;
+    font-family: Arial;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-.secao-texto {
-    display: flex;
+.card-historia {
+    display: none;
+    gap: 32px;
+    border-radius: 24px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+    background-color: #243834;
     align-items: center;
     justify-content: space-between;
-    padding: 2vw 4vw;
+    padding: 48px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Transição de opacidade para o efeito de aparecimento */
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+@keyframes opacity{
+    to{
+        opacity: 1;
+    }
+}
+
+.card-historia.active{
+    display: flex;
+    opacity: 0;
+    transform: translateX(0); /* O card ativo fica no centro */
+    animation-name: opacity;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes opacity{
+    to{
+        opacity: 1;
+    }
+}
+
+.corpo-historia{
+    align-self: flex-start;
+}
+
+/* #ano-1992,#ano-1997,#ano-2002,#ano-2011,#ano-2018, #ano-2024  {
+    display: none;
+} */
+
+/* Envolve a linha do tempo */
+.timeline-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+/* A linha que conecta as bolas */
+.timeline-line {
+    position: absolute;
+    top: 50%;
+    width: 150%;
+    height: 20px;
+    background-color: #FF8931;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+/* Cada item da linha do tempo */
+.timeline {
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+    position: relative;
+    width: 60%; /* Limitar a largura */
+}
+
+.timeline-item {
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-ball {
+    width: 96px; /* Ajuste o tamanho para caber o texto */
+    height: 96px;
+    background-color: #FF8931;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.timeline-ball .year {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Bola ativa */
+.timeline-ball.active {
+    background-color: #333;
+}
+
+
+/* Controle da visibilidade das bolas */
+.timeline-item {
+    display: none;
+}
+
+.timeline-item.active {
+    display: block;
 }

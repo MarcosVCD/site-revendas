@@ -49,7 +49,7 @@ body::after{
         opacity: 1;
         font-size: 120px;  
         animation-delay: 2s;  
-        position:fixed ;
+        position: fixed ;
     }
     90%{
         position:fixed ;
