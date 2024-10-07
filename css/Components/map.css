@@ -1,12 +1,16 @@
 .container{
     display: flex;
-    flex-direction:column;
-    text-align: center;
-    padding: 2.109704641350211vw;
+    justify-content: center;
+    padding-top: 40px;
 }
 
 .svg-container{
     position: relative;
+    width: 640px;
+    height: 640px;
+    background-color: #243834;
+    border-radius: 24px;
+    margin-right: 32px;
 }
 
 #svgmap-pb {
@@ -18,33 +22,11 @@
     fill: #FF8931;
 }
 
-.dropdown-menu{
-    display: none;
-    position: absolute;
-    background: #0e0c0b;
-    border: none;
-    box-shadow: 0px 0.2812939521800281vw 0.5625879043600562vw rgba(0,0,0,0.1);
-    z-index: 10;
-}
-
-.dropdown-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.dropdown-menu ul li {
-    padding: 0.5625879043600562vw 1.1251758087201125vw;
-    text-decoration: none;
-    color: #333;
-    display: block;
-}
-
 svg {
     display: block;
     margin: 0 auto;
     padding: 0;
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
@@ -62,4 +44,31 @@ path:hover {
 .svgbutton:hover {
     transform: scale(1.01);
     fill: #FF8931;   
+}
+
+.card-revendas {
+    display: none;
+}
+
+.card-revendas.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 432px;
+    background-color: white;
+    height: 624px;
+    border-radius: 24px;
+    padding: 8px;
+}
+
+.image-revenda {
+    width:430px;
+    border-radius: 20px;
+}
+
+.card-revendas.active ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
 }

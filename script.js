@@ -5,32 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.parentNode.appendChild(this); // Move o elemento para o final
         });
     });
-
-    // Adiciona o evento 'click' aos elementos com a classe 'svgbutton'
-    document.querySelectorAll('.svgbutton').forEach(button => {
-        button.addEventListener('click', function(event) {
-            var menu = document.getElementById('dropdownmenu');
-            // Alterna a visibilidade do menu
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                // Posiciona o menu dropdown próximo ao botão clicado
-                var rect = button.getBoundingClientRect();
-                menu.style.display = 'block';
-                menu.style.top = `${rect.bottom + window.scrollY}px`;
-                menu.style.left = `${rect.left + window.scrollX}px`;
-            }
-            event.stopPropagation(); // Impede o evento de propagação
-        });
-    });
-
-    // Fecha o menu se clicar fora dele
-    document.addEventListener('click', function(event) {
-        var dropdownmenu = document.getElementById('dropdownmenu');
-        if (!dropdownmenu.contains(event.target)) {
-            dropdownmenu.style.display = 'none';
-        }
-    });
 });
 
 
@@ -80,7 +54,7 @@ function updateCards() {
     const cards = document.querySelectorAll('.card-historia');
     
     // Atualizar a posição de deslizamento dos cards
-    const offset = -currentSlide * 100; // Move o conteúdo em porcentagem
+    const offset = -currentSlide * 0; // Move o conteúdo em porcentagem
     content.style.transform = `translateX(${offset}%)`;
 
     // Atualiza a visibilidade dos cards
